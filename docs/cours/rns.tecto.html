@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no viewport-fit=cover">
+		<!-- Name of web application (only should be used if the website is used as an app)-->
+		<meta name="application-name" content="FSTGAT_GAG">
+		<!-- Theme Color for Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="rgb(33,33,33)">
+		<!-- Add to home screen -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+		<!-- Disable translation prompt -->
+		<meta name="google" content="notranslate">
+		<!-- Force IE 8/9/10 to use its latest rendering engine -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cours d'analyse structurale - FSTGAT_GAG</title>
+		<link rel="icon" type="image/png" href="../img/logo_home.png">
+		<meta name="description" content="Cours de la nouvelle plateforme pour les étudiants en Géologie Appliquée - Géotechnique">
+		<link rel="stylesheet" type="text/css" href="rns.basic.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+		<!-- bootstrap cdn 3.3.7 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- js effect scroll-->
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<!--google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu|Mina|Roboto+Condensed|PT+Sans+Narrow" rel="stylesheet">
+		<!-- font awesome for icons in bootstrap -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+		<div class="container-fluid">
+			<header class="row">
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					  </button>
+					  <a class="navbar-brand" href="#">FSTGAT_GAG</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+					  <ul class="nav navbar-nav">
+						<li><a href="../../index.html"><i class="fas fa-university"></i> Accueil</a></li>
+						<li class="active"><a href="#"><i class="fas fa-book"></i> Cours</a></li>
+						<li><a href="../rns.3.exercices.html"><i class="fas fa-graduation-cap"></i> Exercices</a></li>
+						<li><a href="../rns.4.a_propos.html"><i class="fas fa-info-circle"></i> A Propos</a></li>
+					  </ul>
+					</div>
+				  </div>
+				</nav>
+			</header>
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+					<ol class="breadcrumb">
+						<li><a href="../../index.html">Accueil</a></li>
+						<li><a href="../rns.2.cours.html">Cours</a></li>
+						<li class="active">Analyse Structurale</li>
+					</ol>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-8 col-md-offset-2 col-md-9 col-xs-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3>Cours: Analyse Structurale</h3>
+							<h4>Pour les étudiants M1 en géotechnique</h4>
+							<h5>Sommaire du cours</h5>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<a href="#ch1" class="list-group-item"><em>Chapitre 1: </em>Objet et méthode de la tectonique</a>
+								<a href="#ch2" class="list-group-item"><em>Chapitre 2: </em>Notions élémentaires de déformations et de contraintes</a>
+								<a href="#ch3" class="list-group-item"><em>Chapitre 3: </em>Aspects théoriques de la déformation</a>
+								<a href="#ch4" class="list-group-item"><em>Chapitre 4: </em>Déformation cassante</a>
+								<a href="#ch5" class="list-group-item"><em>Chapitre 5: </em>Formation et évolution des failles et des microstructures associées</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch1">
+					<h2>Chapitre 1: Objet et méthode de la tectonique</h2>
+				</div>
+				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+						  <h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							  1. Sujet d'étude
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						  <div class="panel-body">
+							<p>//La tectonique est ce qui englobe la cinématique (mouvements) et les causes (contraintes), tandis que géologie structurale traite les structures.</p>
+							<p>//C’est la disposition actuelle dans l’espace.</p>
+							<p>//Modification de l’attitude que les roches ont subi depuis leurs formations (transport et déformation).</p>
+							 <p>Les roches déformées sont appelées les Tectonites, c’est toute roche ayant acquis une structure particulière nettement différente de la structure initiale. Il existe 2 types de Tectonites :</p>
+							  <ul class="list-unstyled"><li>Tectonite planaire (applatissement) ;</li><li>Tectonite linéaire (linéation) ;</li><li>Ils peuvent se combiner pour donner plano-linéaire (cisaillement).</li></ul>
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+						  <h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							  2.  Echelle des phénomènes et des objets
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						  <div class="panel-body">
+							<ul>
+								<li>Echelle des dimensions
+									<ul>
+									<li>Microtectonique (structures microscopiques) ;</li>
+									<li>Tectonique classique : dépend de la cartographie et se fait sur les mégastructures ;</li>
+									<li>Géotectonique : analyse des grands ensembles structuraux et leurs relations mutuelles. Elle se pratique sur des cartes de synthèse et elle utilise les données classiques et des observations à partir des satellites.</li>
+								</ul></li>
+								<li>Echelle des durées
+									<p>Les vitesses et les durées de déroulement des phénomènes naturels tectoniques. Ce sont des sujets délicats à étudier, et c’est par manque d’observation directe. Donc 3 conceptions sont avancées pour tenter d’expliquer le déroulement des phénomènes naturels :</p>
+									<ul>
+										<li>Conception catastrophiste, qui considère que les déformations tectoniques sont des phénomènes accidentelles et brutaux ; cette conception n’est pas totalement acceptée, suite au développement de la géochronologie.</li>
+										<li>o	Conception progressiviste, qui se base su la lenteur des déformations pour se rendre compte de l’heure … C’est la conception la plus ou moins admise, car les plaques lithosphériques se déplacent lentement sous nos pieds sans que nous nous rendions compte [quelques cm/an].</li>
+										<li>o	Conception saccadiste, c’est la plus admise, elle se base sur les pauses, les reprises, les ralentissements et les accélérations des évènements tectoniques. Le célèbre exemple de la faille de San Andreas.</li>
+									</ul>
+								</li>
+							</ul>
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+						  <h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							  3.  Vitesse de déformation
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						  <div class="panel-body">
+							<p>La vitesse de la déformation varie d’un cas à un autre. Il y a lieu de distinguer les vitesses instantanées lors de la déformation saccadée, les accélérations, les ralentissements et les vitesses moyennes obtenues sur de longues périodes. En générale, la fourchette des vitesses est très restreinte, elle se situe autour de cm/an.</p>
+							<p>1<sup>ier</sup> cas : déformation par flexion (plissement) connait une vitesse de 0.01 à 1 cm/an pour les strates et de 0.1 à 1 cm/an pour l’écorce terrestre.</p>
+							<p>2<sup>ième</sup> cas : déformation par rupture (cisaillement), la vitesse varie et peut atteindre 1m/s pour les failles sismiques. La faille de San Andreas se déplace de 5 mm/an ; les rides océaniques de 1 à 20 cm/an ; et les nappes de charriage de 1 à 5 cm/an.</p>
+						  </div>
+						</div>
+					  </div>
+						<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingFour">
+						  <h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							  4.  Méthodes d'étude
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+						  <div class="panel-body">
+							<p>3 étapes successives sont nécessaires pour une étude tectonique :</p>
+							  <ol>
+								  <li>Analyse d’effet ;</li>
+								  <li>Description de ces effets ;</li>
+								  <li>Interprétation.</li>
+							  </ol>
+							  <ol>
+								  <li><em>Méthodes analytiques</em> : elles englobent les observations à la surface du sol. Elles ont pour but de collecter des données en utilisant des schémas de mesures, elles englobent aussi des observations aériennes ou satellitaires (le travail à faire est l’interprétation de la photo qui nécessite des vérifications sur le terrain). Et des observations sous la surface du sol, soit par exploration mécanique (sondage, forage et galerie) ou par travaux de géophysique (sismique, gravimétrie ou géomagnétisme).</li>
+								  <li><em>Méthodes descriptives</em> : ce sont des représentations de forme et de structure, il existe 4 représentations :
+									  <ul>
+										  <li>Représentation par bloc, en 3D, diagramme, stéréogramme (en gardant la topographie) et tectonogramme (représente que les phénomènes tectoniques) ;</li>
+										  <li>Représentation cartographique, carte géologique, carte structurale et schémas structuraux ;</li>
+										  <li>Représentation par couche, coupe géologique ;</li>
+										  <li>Représentation par projection stéréographique.</li>
+									  </ul>
+								  </li>
+								  <li><em>Méthode interprétative</em> : elle vise à reconstituer les évènements tectoniques en établissant un calendrier des différentes déformations. Des essais mécaniques, des modèles analogiques et numériques sont utilisés pour étier les modèles.</li>
+							  </ol>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch2">
+					<h2>Chapitre 2: Notions élémentaires de déformations et de contraintes</h2>
+				</div>
+				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingFive">
+						  <h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+							  1.  Déformations tectoniques et les mouvements des plaques lithosphériques
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+						  <div class="panel-body">
+							<p>Plaque lithosphérique : correspond à la partie superficielle, d’une épaisseur 120 à 200 km. Elle comprend une croûte continentale CC et/ou une croûte océanique CO (épaisse de 15 à 60 km, moyenne=30km) et une partie du manteau lithosphérique située entre 30 et 120 km. Ces 2 composantes sont séparées par la discontinuité de Moho. La CC est dominée par une composition granitique (Fk>Pl) à grano-dioritique (Fk inf à Pl) d’une densité de 2.7 ; et une croûte inférieure d’une densité 2.9. Le manteau a une densité qui avoisine 3.3 et constitué de Péridotite. Sa base coïncide avec l’isotherme 1300°C qui est en partie en fusion. (La température de fusion d’un grand de Quartz est de 1700°C). Le passage de la lithosphère vers l’asthénosphère est marqué par un changement thermomécanique, et contrôlé par l’augmentation de la température principalement, et de la pression.</p>
+							<p>Les zones de déformation dans le globe ; elles sont dans le nombre de 3. Et elles se concentrent au niveau de la limite de la plaque lithosphérique qui sont des zones fortement sismiques.</p>
+							<ul>
+							  <li><em>Zones de divergence</em> : les plaques s’écartent et divergent, leurs bordures sont soumises à des tractions (tensions) qui se traduisent par des déformations en extension (allongement) et qui produisent un amincissement, comme les rides océaniques et le rift Est-africain.</li>
+							  <li><em>Zones de convergence</em> : les plaques se rapprochent et convergent, leurs bordures sont soumises à des compressions qui se traduisent par des déformations en raccourcissement et qui produisent des épaississements, comme les zones de subduction, obduction et collision.</li>
+							  <li><em>Zone de coulissage</em> : les plaques glissent les unes par rapport aux autres, sans s’éloigner ou s’approcher, qui sont des mouvements sans amincissement ou épaississement (déplacements horizontaux).</li>
+							</ul>
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingSix">
+						  <h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+							  2.  Gradients géothermiques et les domaines de la déformation naturelle
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+						  <div class="panel-body">
+							<p>Gradient géothermique est l’évolution de la température en fonction de la profondeur.<br>Types de gradients géothermiques : (2.7°C pour chaque 100m ou 30°C/km) … <br>Domaines de la déformation naturelle : • Superficiel (cassant) ; • Profond (solide plastique) ; • Très profond (liquide visqueux).</p>
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingSeven">
+						  <h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+							  3.  Notions de force et de contrainte
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+						  <div class="panel-body">
+							<p>Les contraintes sont les résultats de l’exercice de force qui sont de 2 types : force de volume et force de surface.<br>
+							<strong>Les forces de volume</strong> : agissent sur le bloc rocheux, l’explication la plus évidente est la force de pesanteur Fp=m.g.<br>
+							Une colonne de roche de hauteur h, de section S, et de densité ρ, est soumise à une force de pesanteur Fp=Shρ ; cette force est dirigée vers le bas (elle est verticale, et tout corps ayant une masse subit cette force, et elle dépend de leur volume et de leur densité).<br>
+							La force d’Archimède est aussi une force de volume qui agit sur les ensembles rocheux, cet exemple est illustré par un bloc continental de densité de 2.7, reposant en équilibre hydrostatique sur le manteau de densité 3.3. Ce bloc continental reçoit une poussée verticale Fa dirigée vers le haut, elle est égale au poids du volume du manteau déplacé Fa=Srgρm : avec S : surface du globe, r : hauteur du manteau déplacé et ρm est la densité du manteau. Et le bloc étant en équilibre Fa=Fp.<br>
+							<em class="commentaire">//les forces de volume n’engendre pas de déformation.<br></em>
+							<strong>Les forces de surface</strong> : agissent sur les surfaces limitant des blocs rocheux, donc il existe 2 cas : quand la surface est horizontale et quand elle est inclinée.<br>
+							Lorsque la force Fs agit sur une surface horizontale S, elle est de fait normal à celui-ci Fs=Shρa. Toutes les surfaces horizontales du globe terrestre reçoivent des forces de volumes.<br>
+							Lorsque la force Fs agit sur une surface faisant un angle α, elle se décompose vectoriellement en une force FN (va créer de l’aplatissement) et une FT (va créer du glissement et de la rupture).<br>
+							Les forces de volume et de surface peuvent agir en même temps sur une même surface en cas de l’interphase de 2 plaques lithosphériques dans un contexte de subduction (la convergence exerce des forces de surface, et l’empilement exerce des forces de volume).<br>
+							Notions de contrainte : c’est une force par une unité de surface selon la direction considérée en un point donné. Il y en a 2 types : tectonique et lithostatique. La représentation de l’état des contraintes se fait dans un ellipsoïde des contraintes (σ1 principale maximale ; σ2 principale intermédiaire ; σ3 principale minimale).<br>
+							Les divers types d’état de contraintes<br>
+							1ier cas : contraintes dans toutes les directions σ1=σ2=σ3 ; l’ellipsoïde de contrainte est représenté par une sphère correspond à un état hydrostatique.<br>
+							2ième cas : σ1> σ2=σ3 ; contrainte répartie selon une symétrie de révolution, la forme de l’ellipsoïde est en forme de lentille. C’est l’axe de révolution (axe de rotation).<br>
+							3ième cas : contrainte principale σ1> σ2> σ3 ; l’ellipsoïde de contrainte est poly-axiale.<br><br>
+							<strong>Comportement des roches soumises à des contraintes<br></strong>
+							Une roche soumise à un champ de contrainte enregistre 3 types de déformation successible, qui sont schématisées dans le (graph1) taux de déformation en fonction de la contrainte appliquée.<br></p>
+								<ul>
+								  <li>Etat élastique : c’est primaire et caractérisé par un tracé linéaire et réversible au seuil d’élasticité du matériel ;</li>
+								  <li>Etat plastique : se succède au stade élastique, on parle de durcissement et qui pousse le seuil d’élasticité vers des contraintes plus élevées ;</li>
+								  <li>Déformation fragile.</li>
+								</ul>
+							<p><em>Influence de la déformation hydrostatique</em> : (graph2) la pression de confinement supprime la rupture ;<br>
+							<em>Influence de la température</em> : la température abaisse le seuil de plasticité et augmente la déformation plastique (graph3) ;<br>
+							<em>Influence de la teneur en fluide</em>: (graph4) l’augmentation de la teneur en fluide dans une roche a haute température amollie (affaiblie) les roches et favorise la fracturation hydraulique à faible pression de confinement et à température faible.<br></p>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch3">
+					<h2>Chapitre 3: Aspects théoriques de la déformation</h2>
+				</div>
+				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingEight">
+						  <h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+							  1.  Déformation
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+						  <div class="panel-body">
+							<ol>
+								<li>Définition:<p>La déformation consiste à toute opération qui fait varier la <em>forme</em>, les dimensions, la <em>position</em> et la <em>taille</em> d’un corps d’un état initial à un état final. La déformation peut être conçue comme des mouvements et des modifications géométriques, ou bien comme des relations entre les déformations et leurs causes.</p></li>
+								<li>Composantes élémentaires de la déformation
+									<p>La tectonique peut enregistrer 3 composants élémentaires de déformation, séparés ou combinés, ils sont la translation, la distorsion et la rotation.</p>
+									<p>Translation : changement de position des particules ;<br>
+									Distorsion : changement de forme (allongement et raccourcissement) ;<br>
+									Rotation : changement d’orientation par rapport à un référentiel.</p>
+									<p>// Les seuls déformations visibles sur le terrain sont les résultats de la distorsion.</p>
+								</li>
+								<li>On parle de déformation homogène lorsque les lignes dans un corps initial restent parallèles à l’état final ; et hétérogène lorsqu’elle ne le reste plus.</li>
+								<li>
+									<p>Elle est définie par des rapports dimensionnels entre l’état initial et l’état final. Ces rapports, appelés ‘internes’, expriment des changements de longueur et de forme.</p>
+									<p>Plusieurs rapports sont utilisés pour caractériser ces changements initiaux Li à un changement final Lf de longueur. L’un de ces rapports est l’étirement λ (quand l’étirement λ>1 donc c’est un allongement, et quand λ &lt; 1 raccourcissement).<br><code>ε = Lf - Li/Li --> λ = Lf/Li = 1+ ε</code></p>
+								</li>
+							</ol>
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingNine">
+						  <h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+							  2.  Caractéristiques de la déformation
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+						  <div class="panel-body">
+							<p>La déformation finie d’un objet initialement sphérique (A=B=C=rayon) peut être exprimé par un ellipsoïde définit par 3 axes :</p>
+							<ul class="list-unstyled">
+								<li>X : allongement maximal λ1 ;</li>
+								<li>Y : déformation intermédiaire λ2 ;</li>
+								<li>Z : raccourcissement maximal λ3.</li>
+							</ul>
+							<h4><em>L’état déformé en 2D</em></h4>
+							<p>Si on suppose que toutes les déformations interviennent uniquement en plan, par 2 axes, notamment par allongement et raccourcissement maximal λ1 λ3.</p>
+							<p>La caractérisation de l’état déformé en 2D mis en évidence 2 régime de déformation, la déformation coaxiale (cisaillement pur) et non-coaxiale (cisaillement simple).</p>
+							<ul>
+								<li>Déformation coaxiale</li>
+								<li>Déformation non-coaxiale : c’est une déformation marquée par un basculement progressif avec l’amplification du taux de déformation. On parle ainsi de déformation rotationnelle et de cisaillement pur.</li>
+							  </ul>
+							  <p>// Dans un cisaillement pur, on a toujours une bande de fentes de tension.</p>
+							  <h4><em>Déformation en 3D</em></h4>
+							  <p>Typologie de la déformation 3D : λ1 est l’axe d’allongement, λ3 est celui de raccourcissement dans un plan, en prenant la 3D, on va ajouter la λ2.[Diagramme de Flinn].</p>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch4">
+					<h2>Chapitre 4: Déformation cassante</h2>
+					<p>Soumis à des contraintes tectoniques, les milieux rocheux peuvent se déformer par fracturation. Les déformations cassantes naturelles ainsi reconnu peuvent être regroupées en 2 types :</p>
+					<ul>
+						<li>Les failles, les joints de cisaillements ;</li>
+						<li>Les microstructures associées, les fentes de tensions, les boudinages et les diaclases.</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTen">
+								<h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen"> 1. Faille et joint de cisaillement</a></h4>
+							</div>
+							<div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+								<div class="panel-body">
+									<ol>
+										<li>Définition et nomenclature
+											<p>Une faille est une fracture accompagnée d’un mouvement relatif des compartiments qu’elle sépare. La longueur d’une faille varie du mètre à une centaine de kilomètres. Le terme microfaille est utilisé pour décrire les failles à l’échelle de l’affleurement ; et celui de <em>zone de faille</em> pour des failles à l’échelle kilométrique. On utilise le terme de <em>joint de cisaillement</em> pour une fracture ayant un taux de déplacement très faible (millimétrique).</p>
+											<p>Le plan de faille est un plan de cisaillement, généralement irrégulier, ondulé ou courbé, parfois il est remplacé par une zone plus ou moins épaisse, constituée de plusieurs plans de cisaillement.</p>
+											<p>Le palissage du plan de faille, lors du glissement relatif des compartiments, forme ce qu’on appelle un miroir de faille. Le miroir d’une faille porte souvent des traces de glissement, dites tectoglyphes. Parmi ces derniers, des stries de glissement et/ou de friction.</p>
+											<p>// Les stries sont très importantes, elles permettent de déterminer la direction du glissement. La présence de plusieurs familles de stries superposées rend compte de plusieurs rejeux successifs, et on parle donc de Tectonite polyphasique.</p>
+											<p>La ligne ou le vecteur du glissement sur le plan de la faille : A et A’ initialement superposé est appelé rejet réel (fig.1), il peut se décomposer en plusieurs rejets apparents qui dépendent à la fois de l’attitude du plan de faille (verticale, horizontale, inclinée pendage 0-180°) et de la ligne de glissement (valeur, direction et sens du plongement).</p>
+											<ul class="list-unstyled">
+												<li>RV rejet vertical ;</li>
+												<li>RT rejet horizontal transversal ;</li>
+												<li>RL rejet horizontal longitudinal ;</li>
+											</ul>
+											<p>Le compartiment situé au-dessus de la faille est appelé le toit et le compartiment situé au-dessous est appelé mur. On dit que le toit est porté par le mur.<br>La strie est assimilable à un élément linéaire dans l’espace ou prise en relation avec son plan porteur : pitch.</p>
+										</li>
+										<li>Type de failles
+											<p>Plusieurs critères sont utilisés pour classer les failles :</p>
+											<ul>
+												<li>Le glissement réel des compartiments séparés – rejet réel : c’est une classe fondamentale parce qu’elle renseigne sur le processus tectonique responsable de la formation de failles.</li>
+												<li>Faille à faible rejet horizontal longitudinal et pitch ≈ 90°, on va avoir 2 types de faille, faille normale et faille inverse. La faille normale montre des glissements de toit sur les murs vers le bas, elle produit des allongements horizontaux, des amincissement verticaux et traduit des déformations extensives. Et la faille inverse présente des glissements de toit sur les murs vers le haut, des raccourcissement horizontaux, des épaississement verticaux et des tectoniques compressive.</li>
+												<li>Faille à rejet horizontale longitudinale.</li>
+												<li>Faille décrochante ; ce sont des failles verticales accompagnées par un mouvement horizontal (rejets verticaux et horizontaux sont nuls). La nomenclature du mur et du toit qui définit les compartiments n’est plus valable. Les décrochements peuvent être dextre (horaire) comme ils peuvent être senestre (anti-horaire), selon le mouvement relatif des compartiments. La détermination du sens de mouvements (cinématique) des décrochements se fait en bloc.</li>
+											</ul>
+											<p>Les qualificatifs dextre et senestre sont réservés pour l’usage en plan horizontal, ils sont prescrits en section.<br>Les failles normale, inverse et décrochante peuvent s’organiser individuellement ou en réseau symétrique ou asymétrique. Pour les situations intermédiaires des rejets présentant 3 composants, on peut avoir plusieurs combinaisons (faille normale + décrochement D/S) (faille inverse +DD/DS).</p>
+										</li>
+										<li>Attitude de la faille
+											<p>Par rapport à l'horizontale:</p>
+											<ul>
+												<li>Faille inverse ;</li>
+												<li>Faille fortement pentée (sup à 45°) ;</li>
+												<li>Faille faiblement pentée (inf à 45°) ;</li>
+												<li>Faille plate.</li>
+											</ul>
+											<p>Par rapport aux directions des strates: faille longitudinale parallèle à la direction des strates ; faille transversale perpendiculaire à la direction des strates.</p>
+											<p>Par rapport aux prendages des strates  qu'elles décollent : faille conforme ; faille contraire.</p>
+											<p><em>Cas des failles normales</em> : les <em>failles synthétiques</em> plongent dans le même sens que la faille majeure, et montre des jeux similaires, elles sont toutes normales. Ces failles synthétiques peuvent voir leurs jeux s’inverser et devenir inverse suite à des rotations externes du système. Les <em>failles antithétiques</em> sont pentées dans le sens opposé de la faille majeure et montre des jeux similaires.</p>
+											<p><em>Cas des failles décrochantes</em> : les <em>failles synthétiques</em> présentent le même jeu que la faille majeure, alors que la <em>faille antithétique</em> présente un jeu contraire.</p>
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingEleven">
+								<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"> 2. Microstructures associées </a></h4>
+							</div>
+							<div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+								<div class="panel-body">
+									<ol>
+										<li><em>Diaclases</em> : ce sont des fractures jointives ne montrant pas un mouvement apparent des compartiments qu’elles séparent. Ils se développent dans les roches compétentes et forme généralement des réseaux composés de deux familles entrecroisées, d’espacement centimétrique à décimétrique, parfois tapissées d’enduit de recristallisation. Ils sont soit perpendiculaires aux stratifications ou disposés d’une manière quelconque, ils sont alors associés aux failles, on parle alors des joints de cisaillement.<br>
+										Les diaclases contribuent à l’amélioration des porosités des roches de leurs importante dans le piégeage. Leur formation est à rattacher à une fracturation en condition de compression/d’extension.<br>
+										Dans le contexte compressif, ils sont considérés comme étant des réseaux de failles développés pendant les stades précoces de raccourcissement.<br>
+										Dans le contexte extensif, ils sont considérés comme des marqueurs de déformation par collapse (effondrement) lors du soulèvement des chaînes de montagnes ou de la mise en place des plutons magmatiques.</li>
+										<li><em>Fentes de tension</em> : ce sont des fractures ouvertes présentant des bords jointifs au niveau des extrémités et ouvertes dans la partie centrale. Les fentes larges sont remplies de fibres de recristallisation de Calcite, Gypse, Sel et Quartz. Leurs formations impliquent soit :
+											<ul>
+												<li>Des glissements ménageant des ouvertures qui évoluent dans la direction du mouvement et on les appelle des fentes de glissement ;</li>
+												<li>Rupture fragile aux endroits de moindre cohésion, ce qui implique une valeur négative (domaine de traction) de la contrainte mineure qui est obtenue par l’intervention des fluides et on les appelle les fentes de tension. Dans un référentiel de déformation finie, le plan de la fente est proche du plan λ3 λ1, perpendiculaire à la fraction des fibres de recristallisation dans l’axe de l’allongement maximal.</li>
+											</ul>
+											<p>Les fentes de tension sont les meilleures structures pour déterminer la cinématique et définir le référentiel de déformation finie.<br>
+											Les populations des fentes de tension, constituées généralement de système en échelon, sont disposées en bandes. Les bandes sont orientées à 45° de la contrainte majeure σ1 et les fentes sont disposées à 45° du tracé de la bande. Dans le cadre de déformation coaxiale, il se forme 2 bandes de fentes en échelon formant idéalement un angle de 90° (λ3 et la bissectrice de cet angle 90°), dans le cas de déformation non-coaxiale, il se forme une seule bande de fente en échelon disposée à 45° de la direction du cisaillement. A l’intérieure de chaque bande, les fentes sont progressivement tournées dans le sens du cisaillement et continues à s’accroître et acquièrent ainsi une torsion sigmoïdale proportionnelle aux taux de cisaillement. Leurs extrémités restent toujours dans la direction de λ3.<br>
+											Si la déformation continue a évoluée, on peut avoir :</p>
+											<ul>
+												<li>Fentes superposées par apparition des fentes de 2G ou 3G recoupant les précédents ;</li>
+												<li>Fentes branchées sur des failles et qui sont cisaillées par le jeu de la zone de cisaillement.</li>
+											</ul>
+										</li>
+										<li><em>Joints stylolithiques</em> : ce sont des surfaces suivant lesquelles deux blocs adjacents sont étroitement emboîtés (juxtaposés) et portent des pics et des creux. Ce sont des structures de dissolution, en forme de colonne ou de cône, appelées des pics stylolithiques ou stylolithes, dont la taille varie de quelques mm à quelques cm.<br>
+										Dans un référentiel de déformation (λ1> λ2>λ3), les pics stylolithiques sont parallèles à la direction λ3. Et les fibres de fentes de tensions ⏊ stylolithes.<br>
+										(fig. Interprétation dynamique des fentes et des joints stylolithiques ; c : faille inverse, d : faille normale, e : faille décrochante). Les fibres restent horizontales au niveau des failles normales et décrochantes.<br></li>
+										<li><em>Boudinage</em> : c’est une fragmentation des niveaux rocheux compétents dans une matrice de roches non-compétentes (par exemple : alternance de calcaires/argiles)<br><em>Tronçonnage</em> : c’est le même phénomène que le boudinage mais qui concerne les minéraux et les fossiles.</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch5">
+					<h2>Chapitre 5: Création et évolution des failles et des microstructures associées</h2>
+				</div>
+				<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwelve">
+								<h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve"> 1. Création des failles </a></h4>
+							</div>
+							<div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+								<div class="panel-body">
+									<p>Les conditions de rupture se réalisent quand les contraintes appliquées sur un matériau dépassent les conditions de stabilité de celui-ci. Les valeurs nécessaires peuvent être exprimées graphiquement par le diagramme de Mohr, qui comprend une courbe intrinsèque qui sépare deux domaines, un de stabilité et l’autre de rupture. A cela s’ajoute la cohésion (degré de liaisons entre les grains) et la friction interne (degré de mobilité ou frottement) qui définissent la courbe intrinsèque.</p>
+									<blockquote><em>La fracturation se déclenche lorsque l’écart entre σ1 et σ3 atteint un niveau suffisant que le cercle de Mohr intercepte et frôle en un point de rupture.</em></blockquote>
+									<p>Cette condition se réalise principalement par 3 facteurs</p>
+									<ul>
+										<li>Augmentation du serrage tectonique (convergence lithosphérique) ;</li>
+										<li>Diminution de σ1 par traction ou par réduction de la <a href="https://fr.answers.yahoo.com/question/index?qid=20081214040251AAi9sVG" target="_blank">pression de confinement</a>  ;</li>
+										<li>Par accroissement de la pression des fluides (gel et dégel = cryoclastie).</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThirteen">
+								<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen"> 2. Disposition des failles par rapport aux contraintes </a></h4>
+							</div>
+							<div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+								<div class="panel-body">
+									<p>Une contrainte appliquée à un matériel se décompose en contrainte normale et contrainte cisaillante. Les plans qui reçoivent le maximum de contraintes cisaillantes sont orientés dans un matériel homogène et non-pré-fracturé dans 45° de la direction de contrainte maximale. Dans des conditions ambiantes (naturelles), généralement cet angle reste entre 30° et 45°.</p>
+									<h5><strong>Cas de déformation coaxiale</strong></h5>
+									<p>On aura 2 plans de failles symétriques (conjugués) par rapport à σ1 et qui sont séquents selon σ2. σ1 est la bissectrice de l’angle σ1^ σ2 et l’ouverture est de 2θ.<br>
+									Anderson 1960, a résumé les angles les plans des failles conjuguées selon leurs types de rejet et selon la direction de σ1 et σ2. (fig. Interprétation dynamique des failles par le modèle d’Anderson avec leur représentation stéréographique) Ces angles sont :</p>
+									<ul>
+										<li>60° pour les failles normales par rapport à σ3 ;</li>
+										<li>30° pour les failles inverses par rapport à σ3 ;</li>
+										<li>30° pour les failles décrochantes par rapport à σ1.</li>
+									</ul>
+									<p><em>Les fentes de tension et les joints stylolithiques s’adaptent à cet état de contrainte avec des pics // à σ1 et des fibres // à σ3.</em></p>
+									<h5><strong>Cas de déformation non-coaxiale</strong></h5>
+									<p>Dans ce cas, on va avoir un réseau de fracture asymétrique de type Riedel, composé de fracture majeure D et de fracture associée synthétique R disposé à 15° du cisaillement majeur et antithétique R’ disposé à 75° du cisaillement majeur. (Modèle de Riedel)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="row">
+				<div class="col-sm-offset-1 col-sm-4 col-xs-6 text-center">Pour mater le projet, visiter le repository sur <a href="#"><i class="fab fa-github"></i> Github</a>, ou pour signaler un problème ou contacter, envoyer un email sur l'adresse suivante <a><i class="fas fa-at"></i> aitabdelmalekma@gmail.com</a>. Merci pour votre visite !</div>
+				<div class="col-sm-7 col-xs-6 text-center">Tous droits réservés <i class="far fa-copyright"></i> 2018, FSTGAT_GAG</div>
+			</footer>
+		</div>
+		<!--js libraries and bootstrap js cdn-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<!-- compiled and minified js for bootstrap 3.3.7 -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Mina', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+*/
+@media (max-width: 768px) {
+	.row {font-size: 0.8em;}
+	.course {height: 100%; }
+	.course h4 {font-weight: 900;}
+	.course p {font-size: 1.2em;}
+}
+
+@media (min-width: 768px) {
+	.row {font-size:1em;}
+}
+
+@media (min-width: 992px) {
+	.row {font-size: 1em;}
+}
+.row {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+.intro {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: rgb(33,33,33);
+	color: azure;
+	font-weight: 900;
+	padding: 20px;
+	border-radius: 20px;
+}
+.intro:hover {
+	background-color: azure;
+	color: rgb(33,33,33);
+}
+.courses {
+	margin-bottom: 50px;
+}
+.courses div {
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 0.9em;
+	font-weight: 900;
+	overflow: hidden;
+}
+.course {
+	background-color: rgba(33,33,33,0.1);
+	height: 220px;
+}
+.course:hover {
+	background-color: rgba(33,33,33,0.2);
+	color: rgb(33,33,33);
+}
+.course a {
+	text-decoration: none;
+	color: rgb(33,33,33);
+	font-family: 'Ubuntu', sans-serif;
+}
+.course p {
+	color: rgb(33,33,33);
+	padding: 40px;
+	text-align: justify;
+}
+footer {
+	text-align: justify;
+	padding-bottom: 40px;
+	background-color: rgba(33,33,33,0.2);
+	padding-top: 40px;
+	color: black;
+}
